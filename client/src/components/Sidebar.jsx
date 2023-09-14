@@ -4,9 +4,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import { logo, sun } from '../assets';
 import {navlinks } from '../constants';
 
-const Icon = () => (
+const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
   <div>
-    Icon
+    
   </div>
 )
 
