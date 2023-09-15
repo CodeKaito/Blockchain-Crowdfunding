@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Link, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Router, Route, Routes } from 'react-router-dom';
 import { Home, Profile, CampaignDetails, CreateCampaign } from './pages';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
@@ -16,9 +16,11 @@ export default function App() {
         <Navbar />
 
         <BrowserRouter>
-          <Routes>
-            <Route path='/' element={<Home />} />
-          </Routes>
+          <Router>
+            <Routes>
+              <Route path='/' element={<Home />} />
+            </Routes>
+          </Router>
         </BrowserRouter>
 
       </div>

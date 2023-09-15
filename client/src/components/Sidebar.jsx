@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import { useNavigate, Link } from 'react-router-dom';
+
 import { logo, sun } from '../assets';
 import {navlinks } from '../constants';
 
@@ -13,14 +15,16 @@ const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
 )
 
 const Sidebar = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [isActive, setIsActive] = useState('dashboard');
 
   return (
     <div className='flex justify-between item-scenter flex-col sticky top-5 h-[93vh]'>
-      <Icon styles="w-[52px] h-[52px] bg-[#2c2f32]" imgUrl={logo} />
-
+      <Link to='/'>
+        <Icon styles="w-[52px] h-[52px] bg-[#2c2f32]" imgUrl={logo} />
+      </Link>
+      
       <div className="flex-1 flex flex-col justify-between items-center bg-[#1c1c24] rounded-[20px] w-[76px] py-4 mt-12">
         <div className="flex flex-col justify-center items-center gap-3">
           {navlinks.map((link) => (
