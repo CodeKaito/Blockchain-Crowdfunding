@@ -1,8 +1,9 @@
 
 import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Link, Routes, Route, BrowserRouter } from 'react-router-dom';
 import { Home, Profile, CampaignDetails, CreateCampaign } from './pages';
-import { Sidebar, Navbar } from './components';
+import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
 
 export default function App() {
   return (
