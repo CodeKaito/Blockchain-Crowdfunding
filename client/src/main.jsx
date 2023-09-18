@@ -1,19 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { createRoot } from "react-dom/client";
+import ReactDOM from "react-dom/client";
 import App from "./App";
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import { BrowserRouter as Router } from "react-router-dom";
 
-import './index.css';
+import "./index.css";
 
-const container = document.getElementById("root");
-const root = createRoot(container);
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ThirdwebProvider
-      desiredChainId={ChainId.Goerli}
-    >
+    <ThirdwebProvider desiredChainId={ChainId.Goerli}>
+      <Router>
         <App />
+      </Router>
     </ThirdwebProvider>
   </React.StrictMode>
 );
