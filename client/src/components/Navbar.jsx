@@ -48,7 +48,7 @@ const Navbar = () => {
           <img src={thirdweb} alt='user' className='w-[60%] h-[60%] object-contain ' />
         </div>
 
-          <img src={menu} alt='menu' className='w-[34px] h-[34px] object-contain cursor-pointer' onClick={() => setToggleDrawer(!toggleDrawer)}>
+          <img src={menu} alt='menu' className='w-[34px] h-[34px] object-contain cursor-pointer' onClick={() => setToggleDrawer(!toggleDrawer)} />
       </div>
     </div>
   )
