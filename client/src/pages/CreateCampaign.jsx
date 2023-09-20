@@ -61,6 +61,31 @@ const CreateCampaign = () => {
           <h4 className='font-epilogue font-bold text-[25px] text-white ml-[20px]'>You wil get a 100% of the raised amount</h4>
         </div>
 
+        <div className='flex flex-wrap gap-[40px]'>
+          <FormField 
+            labelName='Goal *'
+            placeholder='ETH 0.50'
+            inputType='text'
+            value={form.target}
+            handleChange={() => {}}
+          />
+          <FormField 
+            labelName='End Date *'
+            placeholder='End Date'
+            inputType='date'
+            value={form.deadline}
+            handleChange={() => {}}
+          />
+
+          <div className='flex justify-center items-center mt-[40px]'>
+            <CustomButton 
+              btnType="submit"
+              title="Submit new campaign"
+              styles="bg-[#1dc071]"
+            />
+          </div>
+        </div>
+
       </form>
     </div>
   )
