@@ -31,7 +31,7 @@ const CreateCampaign = () => {
       </div>
 
       <form onSubmit={handleSubmit} className='w-full mt-[65px] flex flex-col gap-[30px]'>
-        <div className='flex flex-wrap gap[40px]'>
+        <div className='flex flex-wrap gap-[40px]'>
           <FormField 
             labelName='Your Name *'
             placeholder='John Doe'
