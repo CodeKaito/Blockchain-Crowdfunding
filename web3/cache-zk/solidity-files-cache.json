@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/kaito/Documents/GitHub/crowdfunding/web3/contracts/CrowFunding.sol": {
+    "/Users/kaito/Documents/GitHub/Blockchain-Crowdfunding/web3/contracts/CrowFunding.sol": {
       "lastModificationDate": 1694695931009,
       "contentHash": "586acc01d32bba3ce74493dbbcd046e2",
       "sourceName": "contracts/CrowFunding.sol",
